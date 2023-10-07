@@ -5,7 +5,8 @@
 // ** Returns a function as it's result
 
 // Callback function, passed as a parameter in the higher order
-function callbackfunction() {
+
+/* function callbackfunction() {
   console.log("I am a callback function");
 }
 
@@ -15,4 +16,12 @@ function higherOrderFunction(func) {
   func();
 }
 
-higherOrderFunction(callbackfunction);
+higherOrderFunction(callbackfunction); */
+
+import { posts } from "./posts.js";
+
+posts.forEach((posts) => {
+  console.log(posts);
+});
+
+console.clear();
