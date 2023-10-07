@@ -20,8 +20,34 @@ higherOrderFunction(callbackfunction); */
 
 import { posts } from "./posts.js";
 
+// .forEach()
+
 posts.forEach((posts) => {
   console.log(posts);
 });
 
 console.clear();
+
+// .filter()
+
+const filteredPosts = posts.filter((posts) => {
+  return posts.userId === 1;
+});
+
+console.log(filteredPosts);
+
+// .map()
+
+const mappedPosts = filteredPosts.map((posts) => {
+  return posts.id * 10;
+});
+
+console.log(mappedPosts);
+
+// .reduce()
+
+const reducedPostsValue = mappedPosts.reduce((sum, posts) => {
+  return sum + posts;
+});
+
+console.log(reducedPostsValue);
